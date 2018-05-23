@@ -1,0 +1,15 @@
+---
+postgresql_version: 9.3
+
+postgresql_databases:
+  - name: clair
+    owner: docker
+
+postgresql_users:
+  - name: docker
+    pass: "{{docker_user_password}}"
+    encrypted: no
+
+postgresql_user_privileges:
+  - name: docker
+    db: clair

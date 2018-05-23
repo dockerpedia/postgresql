@@ -1,0 +1,2 @@
+[dockerpedia]
+dockerpedia-qa ansible_ssh_host=dockerpedia-qa
